@@ -42,6 +42,7 @@ $(function(){
 
     window.location.href = newUrl;
 
+    // So elegant
 
   });
 
