@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Page Title</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+
+
+<body>
+
+  <h1>Anesthesia Machine Simulator</h1>
+
+  <h2>
+  Case: Rapid Sequence Induction.
+  </h2>
+
+	<h3>
+	Patient:
+	</h3>
+
+	  <p>
+	    Patient is a 38 year old male coming in from the emergency room after an MVA.
+	    <br/>
+	    <br/> Hemoglobin is 11, but patient has no visible external lacerations. Surgeon suspects internal bleeding and would like the patient prepped for exploratory abdominal surgery.
+	  </p>
+	<br/>
+	  <h4 id="question">
+	What is the safest option for this patient?
+	</h4>
+
+	<ul id="answers">
+
+	  <input type="radio" name="question" value="correct" id="a1">
+	  <label for="a1"> Endotracheal intubation.</label>
+		<span id="description1" hidden> Correct! </span>
+	  <br/>
+
+	  <input type="radio" name="question" value="incorrect" id="a2">
+	  <label for="a2"> LMA placement.</label>
+		<span id="description2" hidden> LMAs do not eliminate risk for aspiration and do not provide a DEFINITIVE airway. </span>
+		<br/>
+
+	  <input type="radio" name="question" value="incorrect" id="a3">
+	  <label for="a3"> Inhalation induction. </label>
+		<span id="description3" hidden> Nope. Not sure why though. </span>
+	  <br/>
+
+	  <input type="radio" name="question" value="incorrect" id="a4">
+	  <label for="a4"> MAC. </label>
+		<span id="description4" hidden> Due to the extreme stimuli the patient will experience during such an invasive procedure, MAC is not the best choice. </span>
+	  <br/>
+	</ul>
+
+	<button id="select">
+	Select.
+	</button>
+	<button hidden id="next">
+	Next Question.
+	</button>
+
+</body>
+
+</html>
